@@ -1,0 +1,7 @@
+
+body { font-family: Arial, sans-serif; }
+.matrix-container, .output-container { margin-top: 20px; }
+.matrix-grid, .output-grid { display: grid; gap: 5px; }
+.matrix-grid input { width: 50px; padding: 5px; text-align: center; }
+.output-grid div { width: 50px; padding: 5px; text-align: center; background-color: #f0f0f0; }
+.error { color: red; }
