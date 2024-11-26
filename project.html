@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LDU Factorization Calculator</title>
-  <link rel="stylesheet" href="style5.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LDU Factorization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-  <h1>LDU Factorization Calculator</h1>
-
-  <div class="container">
-    <label for="matrix-size">Enter Matrix Size (e.g., 3 for a 3x3 matrix):</label>
-    <input type="number" id="matrix-size" min="2" max="10" value="3" aria-label="Matrix Size">
-    <button onclick="generateMatrixInput()">Generate Matrix</button>
-    
-    <div id="matrix-container" class="matrix-container"></div>
-
-    <button onclick="calculateLDU()">Calculate LDU</button>
-    
-    <p id="error-message" class="error"></p>
-  </div>
+    <header>
+        <h1>LDU Factorization Calculator</h1>
+    </header>
+    <main>
+        <section>
+            <p>Enter the size of the matrix (e.g., 3 for a 3x3 matrix):</p>
+            <input type="number" id="matrixSize" min="2" value="3">
+            <button onclick="generateMatrix()">Generate Matrix</button>
+        </section>
+        <div id="matrixContainer"></div>
+        <button onclick="performLDU()" id="calculateButton" class="hidden">Calculate LDU</button>
+        <div id="output"></div>
+    </main>
 </body>
 </html>
